@@ -26,7 +26,7 @@ RGPU=slide_barcode
 java -jar $GATK \
 -T HaplotypeCaller \
 -R Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta  \
--L datafiles/brca_genes.bed
+-L datafiles/brca_genes.bed \
 -I RG_dedupped_na12878_wes.sorted.bam \
 -o RG_dedupped_na12878_wes.sorted.vcf
 
